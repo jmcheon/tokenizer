@@ -1,8 +1,9 @@
 const hre = require("hardhat");
+require("dotenv").config();
 
 async function main() {
   const Faucet = await hre.ethers.getContractFactory("Faucet");
-  const faucet = await Faucet.deploy("0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2");
+  const faucet = await Faucet.deploy(process.env.TOKEN_ADDRESS || "");
 
   await faucet.waitForDeployment();
 
