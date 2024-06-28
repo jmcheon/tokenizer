@@ -2,11 +2,10 @@
 
 pragma solidity ^0.8.17;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 
-contract Multisig is Ownable {
+contract Multisig {
 	// events
 	event Deposit(address indexed sender, uint amount, uint balance);
 	event SubmitTransaction(
@@ -39,7 +38,7 @@ contract Multisig is Ownable {
 
 	Transaction[] public transactions;
 
-	constructor(address _tokenAddress, address[] memory _owners, uint _numComfirmationsRequired) Ownable(msg.sender) {
+	constructor(address _tokenAddress, address[] memory _owners, uint _numComfirmationsRequired) {
 		require(_owners.length > 0, "owners requried");
 		require(_numComfirmationsRequired > 0 && _numComfirmationsRequired <= _owners.length, "invalid number of required confirmations");
 		token = IERC20(_tokenAddress);
@@ -52,6 +51,11 @@ contract Multisig is Ownable {
 		}
 		numConfirmationsRequired = _numComfirmationsRequired;
 	}
+
+	modifier onlyOwner() {
+        require(isOwner[msg.sender], "not owner");
+        _;
+    }
 
 	modifier transactionExists(uint _transactionIndex) {
 		require(_transactionIndex < transactions.length, "transaction doesn't exist");
@@ -71,9 +75,17 @@ contract Multisig is Ownable {
 	receive() payable external {
 		emit Deposit(msg.sender, msg.value, address(this).balance);
 	}
-	// helper function to easily deposit in Remix
-	function deposit() payable external {
-		emit Deposit(msg.sender, msg.value, address(this).balance);
+
+	function getBalance() external view returns (uint) {
+		return token.balanceOf(address(this));
+	}
+
+	function getOwners() public view returns (address[] memory) {
+		return owners;
+	}
+
+	function getTransactionCount() public view returns (uint) {
+		return transactions.length;
 	}
 
 	function submitTransaction(address _to, uint _value, bytes memory _data) public onlyOwner {
