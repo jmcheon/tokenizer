@@ -103,7 +103,7 @@ deploy_multisig.sh
 |-----------------|----------------|--------|-------------------------------------------|
 | **Token**       | Jung42Token    | JUNG42 | 0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2|
 | **Faucet**      | Faucet         | -      | 0x27D4f66748EAea5e9769baAF1bB223F841fab21E|
-| **Multi-Signature** | Multisig       | -      | 0x5280d7AbD73dD78EA0C60FB347c508Ce68fAAb73|
+| **Multi-Signature** | Multisig       | -      | 0xac938d1C6A7bB0685b985cD6FEB35a35988530F0|
 
 
 ### Summary Table

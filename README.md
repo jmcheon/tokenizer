@@ -27,7 +27,7 @@ I chose the Ethereum blockchain for its widely adopted smart contract capabiliti
 |-----------------|----------------|--------|---------------|
 | **Token**       | [Jung42Token](https://sepolia.etherscan.io/address/0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2)    | JUNG42 | 0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2|
 | **Faucet**      | [Faucet](https://sepolia.etherscan.io/address/0x27d4f66748eaea5e9769baaf1bb223f841fab21e)         | -      | 0x27D4f66748EAea5e9769baAF1bB223F841fab21E|
-| **Multi-Signature** |[Multisig](https://sepolia.etherscan.io/address/0x5280d7abd73dd78ea0c60fb347c508ce68faab73)       | -      | 0x5280d7AbD73dD78EA0C60FB347c508Ce68fAAb73|
+| **Multi-Signature** |[Multisig](https://sepolia.etherscan.io/address/0xac938d1c6a7bb0685b985cd6feb35a35988530f0)       | -      | 0xac938d1C6A7bB0685b985cD6FEB35a35988530F0|
 
 ## Background knowledge
 - Web3
