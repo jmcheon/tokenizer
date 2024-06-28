@@ -23,11 +23,11 @@ In this directory, the whitepaper of `Jung42Token` project can be found, which e
 I chose the Ethereum blockchain for its widely adopted smart contract capabilities, which facilitate the development of decentralized applications (DApps), including blockchain tokens using the ERC-20 standard. Ethereum's active developer community, scalability solutions, and established ecosystem make it an ideal platform for building innovative blockchain-based solutions.
 
 ## Contract Info
-| Component       | Contract Name | Symbol | Contract Address| Etherscan Sepolia|
-|-----------------|----------------|--------|---------------|---|
-| **Token**       | Jung42Token    | JUNG42 | 0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2|[Jung42Token](https://sepolia.etherscan.io/address/0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2)|
-| **Faucet**      | Faucet         | -      | 0x27D4f66748EAea5e9769baAF1bB223F841fab21E|[Faucet](https://sepolia.etherscan.io/address/0x27d4f66748eaea5e9769baaf1bb223f841fab21e)|
-| **Multi-Signature** | Multisig       | -      | 0x5280d7AbD73dD78EA0C60FB347c508Ce68fAAb73|[Multisig](https://sepolia.etherscan.io/address/0x5280d7abd73dd78ea0c60fb347c508ce68faab73)|
+| Component       | Contract Name | Symbol | Contract Address|
+|-----------------|----------------|--------|---------------|
+| **Token**       | [Jung42Token](https://sepolia.etherscan.io/address/0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2)    | JUNG42 | 0x6Eb3eA000c4591f9dCEFc5E869E0A19628e8a4c2|
+| **Faucet**      | [Faucet](https://sepolia.etherscan.io/address/0x27d4f66748eaea5e9769baaf1bb223f841fab21e)         | -      | 0x27D4f66748EAea5e9769baAF1bB223F841fab21E|
+| **Multi-Signature** |[Multisig](https://sepolia.etherscan.io/address/0x5280d7abd73dd78ea0c60fb347c508ce68faab73)       | -      | 0x5280d7AbD73dD78EA0C60FB347c508Ce68fAAb73|
 
 ## Background knowledge
 - Web3
