@@ -30,6 +30,8 @@ To incentivize network participants, a block reward mechanism is implemented. Ea
 4. Burable Tokens
 `Jung42Token` supports the buring of tokens, allowing holders to permanently a portion of their tokens. This feature can be used to reduce the total supply of tokens in circulation, potentially increasing the value of the remaining tokens. The burn functionality adds an additional layer of flexibility and control for token holders.
 
+#### Actions
+1. Set Block Reward: Set the block reward for miners.
 
 ## Token Faucet
 
@@ -46,6 +48,12 @@ There is a 1 minute lock time between requests from the same address
 
 3. Admin Controls
 The owner can adjust the withdrawal amount and lock time 
+
+#### Actions
+1. Request Token: Request for a certain amount of token from the faucet.
+2. Set Withdrawal Amount: Set the amount of withdrawal for each request.
+3. Set Lock Time: Set the lock time to wait for the next request.
+4. Withdrawal: Function to withdrawal remaining token from the faucet.
 
 ## Multisig Wallet
 
