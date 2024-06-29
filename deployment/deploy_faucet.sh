@@ -6,4 +6,4 @@ cd ../code/token
 network="${1:-sepolia}"
 
 # Run Hardhat script to deploy smart contracts with the specified network
-npx hardhat run --network "$network" scripts/deployFaucet.ts
+npx hardhat run --network "$network" scripts/deployFaucet.js
